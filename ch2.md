@@ -15,7 +15,6 @@ git push
 이제 깃허브 리포지토리에 접속하여 성공적으로 push가 되었는지 확인합니다.
 
 <img src="./ch2/git_push.png">
-<p style="text-align: center">제대로 push되었다!</p>
 
 ### 저는 Push가 안되는데요?
 
