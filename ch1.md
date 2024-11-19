@@ -148,6 +148,7 @@ git status
 ```
 
 그러면 터미널에 다음과같이 나타날 것입니다.
+
 <img src="./ch1/git_status_bf_add.png">
 
 이는 새로 만든 파일이 untracked라는 의미입니다.
