@@ -75,7 +75,17 @@ git checkout {branch name}
 ```bash
 git checkout feature/test
 ```
+</details>
 
+### 둘을 한번에 하기
+```git checkout -b {브랜치 이름}```을 사용하여 생성과 이동을 한번에 가능합니다.
+
+<details>
+<summary> 예시 </summary>
+
+```bash
+git checkout -b feature/test
+```
 </details>
 
 ### 브랜치에 커밋 생성하기
@@ -325,11 +335,10 @@ git rebase 명령어는 원격에 올라간 히스토리에는 되도록 사용�
 - Rebase는 히스토리를 선형으로 정리해 깔끔하고 읽기 쉬운 작업 흐름을 만듭니다.
 - Rebase와 Merge의 차이점과 적절한 사용 시점을 이해했습니다.
 #### Rebase -i:
-
 - git rebase -i를 통해 커밋 메시지 수정, 병합(Squash), 삭제 등으로 히스토리를 정리할 수 있습니다.
 - 이를 활용하면 PR(Pull Request)을 깔끔히 정리하여 팀원들이 작업 내역을 쉽게 이해할 수 있습니다.
+  
 #### 주의 사항:
-
 - Rebase는 개인 작업이나 Push되지 않은 브랜치에서만 사용해야 합니다.
 - 원격 브랜치에서 Rebase를 사용할 경우 협업 환경에서 큰 혼란을 초래할 수 있으므로, 원격 히스토리 변경은 신중히 진행해야 합니다.
   
