@@ -23,8 +23,6 @@ git push
 
 <img src="./ch2/git_push_failed.png">
 
-<p style="text-align: center"> 뭐야 이거 왜 안돼요</p>
-
 이는 누군가의 작업물이 이미 remote repository에 push 되어서,
 여러분의 로컬 머신의 리포지토리에 저장된 원격 리포지토리 정보와 다르기 때문에
 git이 자동으로 저장소의 무결성을 보호하는 과정입니다.
