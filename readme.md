@@ -19,7 +19,7 @@
     - [Chapter 1: Git 기본 사용법](#chapter-1-git-기본-사용법)
     - [Chapter 2: 원격 저장소와의 상호작용](#chapter-2-원격-저장소와의-상호작용)
     - [Chapter 3: 브랜치와 리베이스](#chapter-3-브랜치와-리베이스)
-    - [Chapter 4: 협업 도구와 Git-flow](#chapter-4-협업-도구와-git-flow)
+    - [Chapter 4: Pull Request](#chapter-4-pull-request)
   - [실습 가이드](#실습-가이드)
     - [팀 프로젝트 실습](#팀-프로젝트-실습)
     - [실습 단계별 상세 내용](#실습-단계별-상세-내용)
@@ -94,11 +94,11 @@ Git은 소스 코드의 버전 관리를 위한 **분산**형 시스템입니다
 - 브랜치 병합(Merge)과 리베이스(Rebase)
 - 충돌 해결 방법
 
-### [Chapter 4: 협업 도구와 Git-flow](./ch4.md)
+### [Chapter 4: Pull Request](./ch4.md)
 
 - Pull Request 사용법
 - 이상적인 PR과 커밋 관리
-- Git-flow 전략 소개 및 최종 실습
+- 최종 실습
 
 ## 실습 가이드
 

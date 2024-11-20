@@ -281,6 +281,7 @@ Pull Request(PR)는 협업 환경에서 코드 변경 사항을 검토하고 병
 - **Git Hooks**: 커밋 전에 자동으로 실행되는 스크립트를 설정하여 코드 품질을 유지합니다.
 - **Continuous Integration/Continuous Deployment (CI/CD)**: 자동화된 테스트와 배포 파이프라인을 구축하여 개발 효율성을 극대화합니다.
 - **Advanced Rebase Techniques**: 인터랙티브 리베이스(`git rebase -i`)를 활용하여 커밋 히스토리를 더욱 정교하게 관리합니다.
+- **Git-Flow**: ```Git-flow``` 방식으로 브랜치를 관리하여 배포나 변경 내역 추적을 더 깔끔하게 유지합니다. 
 
 ### 마무리
 
