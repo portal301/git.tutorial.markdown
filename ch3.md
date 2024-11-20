@@ -159,6 +159,9 @@ git branch feature/rebase
 이제 커밋을 두 개 추가해보겠습니다.
 <details>
 <summary>
+예시
+
+</summary>
 
 ``` bash
 임의의 파일 생성
@@ -167,11 +170,6 @@ git commit -m "새 파일 생성"
 임의의 파일 수정
 git add .
 git commit -m "파일 수정"
-```
-</summary>
-
-```bash
-git branch feature/rebase
 ```
 </details>
 
