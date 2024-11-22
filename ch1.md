@@ -107,7 +107,7 @@ Git은 git 서버에 저장되는 원격 리포지토리와, 개인 컴퓨터에
 ## 리포지토리 클론하기
 클론은 원격 리포지토리에 있는 데이터를 로컬로 가져오는 행위를 말합니다. 방식은 다음과 같습니다.
 
-1. 생성된 원격리포지토리의 URL로 접속 후, 초록색 ```<> Code``` 버튼을 클릭합니다.
+1. 생성된 원격 리포지토리의 URL로 접속 후, 초록색 ```<> Code``` 버튼을 클릭합니다.
 
 2. Clone 탭에서 ssh를 클릭 후 주소를 복사합니다.
 
@@ -123,21 +123,23 @@ git clone git@github.com:portal301/asdf.git
 
 이후 폴더에 제대로 클론이 되었는지 확인합니다.
 
-## 첫 커밋 해보기
-커밋이란 수정된 상태의 스냅샷을 리포지토리에 저장하는 행위를 말합니다. 이번엔 첫 커밋을 작성해보겠습니다.
+## 커밋
+커밋(Commit)이란 수정된 상태의 스냅샷을 리포지토리에 저장하는 행위를 지칭합니다. 
+
+이번엔 첫 커밋을 작성해보겠습니다.
 
 
-
-새 txt파일을 생성합니다. 이후 아무 텍스트를 집어넣습니다.
+### 첫 커밋 작성하기
+새 txt파일을 생성합니다. 내용은 아무 텍스트로 채워넣습니다.
 
 Git 시스템에서 각 파일은 크게 Tracked(관리대상임)와 Untracked(관리대상이 아님)로 나눕니다.
 
 Tracked 파일은 이미 스냅샷에 포함되어 있던 파일입니다. 
 
 Tracked 파일은 또 다음과 같은 상태로 나눠집니다. 
-- Unmodified(수정하지 않음)
-- Modified(수정함)
-- Staged(커밋하면 저장소에 기록되는) 
+- **Unmodified**(수정하지 않음)
+- **Modified**(수정함)
+- **Staged**(커밋하면 저장소에 기록되는) 
 
 처음 저장소를 Clone하면 모든 파일은 Tracked이면서 Unmodified 상태가 됩니다. 이는  파일을 아무것도 수정하지 않았기 때문입니다.
 
@@ -151,9 +153,9 @@ git status
 
 <img src="./ch1/git_status_bf_add.png">
 
-이는 새로 만든 파일이 untracked라는 의미입니다.
+이는 새로 만든 파일이 **untracked**라는 의미입니다.
 
-텍스트파일을 tracked 상태로 바꾸기 위해서는 다음 명령어를 사용해야합니다.
+텍스트파일을 **tracked** 상태로 바꾸기 위해서는 다음 명령어를 사용해야합니다.
 
 ```bash
 git add <filename.txt>
@@ -167,7 +169,7 @@ git add asdf.txt
 
 <img src="./ch1/git_status.png">
 
-이제 파일을 tracked 상태로 만들었으니, 커밋을 해보겠습니다.
+이제 파일을 tracked 상태로 만들었으니, 커밋을 작성해보겠습니다.
 
 커밋은 다음 명령어로 실행할 수 있습니다.
 
@@ -176,18 +178,7 @@ git commit -m "message"
 ```
 
 쌍따옴표 사이 메시지는 수정 내역을 적으시면 됩니다.
-#### ❌ 나쁜 예시
-```bash
-git commit -m "버그 수정"
-```
-#### ⭕ 좋은 예시
-```bash
-git commit -m "FIX : XXX 파일에 YYYY 문제가 있던 부분 수정"
-```
 
-```bash
-git commit -m "FEATURE : ZZZ 기능 구현"
-```
 
 ## 커밋 로그 찍어보기
 커밋 로그를 확인하기 위해서는 ```git log```명령어를 사용합니다.
@@ -203,7 +194,7 @@ Log 명령어는 커밋 로그를 시간 순서대로 보여줍니다.
 ## 커밋 로그 더 편하게 보기
 윈도우 기준으로,``` C:\Users\<사용자 이름>\.gitconfig```에 접근 합니다.
 
-해당 파일을 메모장으로 열어 다음을 복사 붙여넣기 합니다.
+해당 파일을 메모장으로 열어 다음을 복사해 붙여 넣습니다.
 ```
 [alias]
 lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all
@@ -211,7 +202,7 @@ lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(
 lg = lg1
 ```
 
-다시 프로젝트 폴더에 들어가 ```git lg``` 명령어를 사용합니다.
+다시 프로젝트 폴더에 들어가 ```git lg``` 명령어를 사용해봅니다.
 
 ## Conclusion
 이번 장에서는 Git의 설치부터 초기 설정, GitHub과의 연동, 리포지토리 생성 및 클론, 첫 커밋 작성과 커밋 로그 확인에 이르기까지 Git의 기본적인 사용법을 다루었습니다. Git은 소스 코드 관리의 핵심 도구로, 버전 관리와 협업을 효율적으로 수행할 수 있게 도와줍니다.
