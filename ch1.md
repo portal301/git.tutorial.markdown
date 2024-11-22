@@ -48,29 +48,29 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 이후 다음 명령어를 통해 공개키를 클립보드로 복사합니다.
 
+### Powershell
 **ed25519**
 ```bash
-eval $(ssh-agent -s)
-ssh-add ~/.ssh/id_ed25519
-cat ~/.ssh/id_ed25519.pub
+Get-Content $HOME\.ssh\id_ed25519.pub
+Get-Content $HOME\.ssh\id_ed25519.pub | Set-Clipboard
 ```
 **rsa**
 ```bash
-eval $(ssh-agent -s)
-ssh-add ~/.ssh/id_rsa
-cat ~/.ssh/id_rsa.pub
+Get-Content $HOME\.ssh\id_rsa.pub
+Get-Content $HOME\.ssh\id_rsa.pub | Set-Clipboard
 ```
-만일 cat 명령어가 작동하지 않으면 다음을 시도합니다.
+### 명령 프롬프트
 
 **ed25519**
 ```bash
-clip < ~/.ssh/id_ed25519.pub
+type %USERPROFILE%\.ssh\id_ed25519.pub
+clip < %USERPROFILE%\.ssh\id_ed25519.pub
 ```
-
 
 **rsa**
 ```bash
-clip < ~/.ssh/id_rsa.pub
+type %USERPROFILE%\.ssh\id_rsa.pub
+clip < %USERPROFILE%\.ssh\id_rsa.pub
 ```
 이후 github에 로그인 후, 우측 상단에 프로필 사진을 눌러 ```Settings```를 클릭합니다.
 그리고 좌측의 ```SSH and GPG Keys``` 탭을 클릭합니다.
