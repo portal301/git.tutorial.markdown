@@ -202,6 +202,18 @@ lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(
 lg = lg1
 ```
 
+### Alias
+Git alias는 자주 사용하는 Git 명령어를 더 짧고 간단하게 사용할 수 있도록 별칭을 설정하는 기능입니다. 이를 통해 반복되는 긴 명령어를 기억하거나 입력할 필요 없이 간편하게 작업을 수행할 수 있습니다.
+
+예를 들어, ```commit``` 명령어가 너무 길다 싶으면, 
+```.gitconfig``` 파일에 다음과 같은 방식으로 명령어를 추가할 수 있습니다.
+
+```
+[alias]
+...
+co = commit
+```
+
 다시 프로젝트 폴더에 들어가 ```git lg``` 명령어를 사용해봅니다.
 
 ## Conclusion
